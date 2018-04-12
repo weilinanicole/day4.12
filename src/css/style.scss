@@ -62,7 +62,53 @@
         overflow-y: scroll;
     }
     
+    .list {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        height: auto;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .1rem;
+            li {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                h2 {
+                    font-size: .18rem;
+                    line-height: 2.5;
+                }
+                h3 {
+                    line-height: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span {
+                        &:nth-child(2) {
+                            border: 1px solid red;
+                        }
+                    }
+                }
+                h4 {
+                    span {
+                        color: red
+                    }
+                }
+            }
+        }
+        ol {
+            text-align: right;
+            padding-right: .1rem;
+        }
+    }
+    
     footer {
         width: 100%;
         height: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 .1rem;
     }
