@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: .14rem;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,7 +24,41 @@ html,
 
 header {
   width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ccc;
+}
+
+header .one {
+  width: 100%;
+  height: .6rem;
+  display: flex;
+  align-items: center;
+  padding: 0 .1rem;
+  justify-content: space-between;
+  background: red;
+}
+
+header .one li {
+  font-size: .18rem;
+}
+
+header .one li input {
+  width: 100%;
+  background: #eee;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: .2rem;
+  text-align: center;
+}
+
+header .two {
+  width: 100%;
   height: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .1rem;
 }
 
 section {
